@@ -1,0 +1,115 @@
+body{
+
+
+background: black;
+
+}
+
+.title{
+
+font-family: 'Comfortaa', cursive;
+color: white;
+text-align: center;
+font-size: 100px;
+animation-name: fall;
+animation-duration: 1s;
+margin-top: 200px;
+margin-left: 15%;
+margin-right: 15%;
+
+
+}
+
+
+.sub{
+
+	 transition: 0.8s;
+	 padding: 10px;
+}
+
+.sub:hover {
+
+
+background-color: white;
+color: black;
+
+
+ border-radius: 100px;
+  padding: 20px; 
+  width: 100%px;
+  height: 100%px;  
+
+}
+
+@keyframes fall{
+
+
+	from {
+
+		margin-top: 100px;
+	}
+
+	to {
+
+
+		margin-top: 200px;
+	}
+}
+
+.center {
+
+
+text-align: center;
+
+}
+
+
+.git {
+
+width: 90px;
+animation-name: fade;
+animation-duration: 2s;
+transition: 0.8s;
+}
+
+
+.git:hover{
+
+
+	width: 120px;
+
+}
+
+
+@keyframes fade {
+
+
+	from {
+
+
+		opacity: 0%;
+	}
+
+
+	to {
+
+
+		opacity: 100%;
+
+	}
+}
+
+
+.info {
+
+	color: white;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	margin-top: 30px;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+
+
+
