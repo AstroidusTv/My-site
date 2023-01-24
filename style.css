@@ -1,40 +1,40 @@
-body{
-
-
-background: black;
-
-}
+body {
+        background-color: #fff;
+        color: #000;
+      }
+      .dark-mode {
+        background-color: black;       
+         color: #fff;
+      }
 
 .title{
 
 font-family: 'Comfortaa', cursive;
-color: white;
+
 text-align: center;
 font-size: 100px;
-animation-name: fall;
+animation-name: fade;
 animation-duration: 1s;
 margin-top: 200px;
 margin-left: 15%;
 margin-right: 15%;
+border-radius: 100px;
+font-size: 200;
+transition: 1s;
+}
 
+.title:hover{
+
+
+font-size: 120px;
+transition: 1s;
 
 }
 
 
-.sub{
-
-	 transition: 0.8s;
-	 padding: 10px;
-}
-
-.sub:hover {
 
 
-background-color: white;
-color: black;
-
-
- border-radius: 200px;
+ border-radius: 100px;
   padding: 20px; 
   width: 100%px;
   height: 100%px;  
@@ -44,16 +44,16 @@ color: black;
 @keyframes fall{
 
 
-	from {
+  from {
 
-		margin-top: 100px;
-	}
+    margin-top: 100px;
+  }
 
-	to {
+  to {
 
 
-		margin-top: 200px;
-	}
+    margin-top: 200px;
+  }
 }
 
 .center {
@@ -76,7 +76,7 @@ transition: 0.8s;
 .git:hover{
 
 
-	width: 120px;
+  width: 120px;
 
 }
 
@@ -84,32 +84,55 @@ transition: 0.8s;
 @keyframes fade {
 
 
-	from {
+  from {
 
 
-		opacity: 0%;
-	}
+    opacity: 0%;
+  }
 
 
-	to {
+  to {
 
 
-		opacity: 100%;
+    opacity: 100%;
 
-	}
+  }
 }
 
 
 .info {
 
-	color: white;
-	text-align: center;
-	font-family: 'Comfortaa', cursive;
-	margin-top: 30px;
-	animation-name: fade;
-	animation-duration: 2s;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 30px;
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 
 
+.lefter {
 
+
+text-align: left;
+width: 30px;
+transition: 1s;
+border-color: blue;
+border-radius: 3px;
+}
+
+
+.moon {
+
+padding: 0;
+border: none;
+background: none;
+}
+
+.lefter:hover {
+
+
+width: 40px;
+
+
+}

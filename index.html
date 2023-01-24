@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
-	<title>Asteroidus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+  <title>Asteroidus</title>
 </head>
+
 <body>
+   
+
+    <button id="dark-mode-toggle" class="moon"><div ><img class="lefter" id="logo2" src="moon.png" alt="moonlogo"></button>
+      <div class="title"><h1>Asteroidus</h1></div>
+    <div class="center"><a href="https://github.com/AstroidusTv"><img id="logo1" src="github-black.png" alt="githublogo" class="git"></a></div>
+    
+    <div class="info">
 
 
+    <p>Contact me at asteroidus@protonmail.com</p>
+    <p>My website : rmbi.ch/cescosite</p>
+    </div>
 
+      <script>
+      let darkMode = localStorage.getItem('darkMode'); 
+      if (darkMode === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.getElementById("logo1").src = "github.png";
+        document.getElementById("logo2").src = "moon.png";
+      }
 
-<div class="title"><h1 class="sub">Asteroidus</h1></div>
-
-
-
-
-
-<div class="center">
-<a href="https://github.com/AstroidusTv"><img src="github.png" class="git"></a>
-</div>
-
-<div class="info">
-	
-	<p>Contact me at asteroidus@protonmail.com</p>
-	<p>My website : rmbi.ch/cescosite</p>
-
-</div>
-
-</body>
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+ 
+      darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+          localStorage.setItem('darkMode', 'enabled');
+          document.getElementById("logo1").src = "github.png";
+          document.getElementById("logo2").src = "moon.png";
+        } else {
+          localStorage.setItem('darkMode', null);
+          document.getElementById("logo1").src = "github-black.png";
+          document.getElementById("logo2").src = "sun.png";
+        }
+      });
+    </script>
+    </script>
+  </body>
 </html>
