@@ -205,3 +205,31 @@ body {
       height: 60px;
 
 }
+
+.space{
+
+      display: block;
+      margin-top: 200px 0;
+      content: "";
+
+}
+
+
+.block{
+
+
+      background-color: black;
+      opacity: 50%;
+      border-color: black;
+      border-radius: 10px; 
+      border-style: solid;
+      transition: ;
+      }
+
+.cescosite:hover{
+
+      transition: 0.3s;
+      height: 200px;
+
+
+}
